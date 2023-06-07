@@ -1,8 +1,9 @@
-import styles from '../styles/modules/GrilledMeatPage.module.scss';
+import { useGetProductsQuery } from '../store/services/shopApi';
 import Header from '../components/header/Header';
 import GrilledMeatCard from '../components/grilledMeatCard/GrilledMeatCard';
-import { useGetProductsQuery } from '../store/services/shopApi';
 import Loader from '../components/loader/PageLoader';
+import styles from '../styles/modules/GrilledMeatPage.module.scss';
+
 const GrilledMeatListPage = () => {
 	const { data, isLoading } = useGetProductsQuery(0);
 

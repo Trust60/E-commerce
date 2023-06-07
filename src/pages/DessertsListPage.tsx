@@ -1,14 +1,15 @@
+import { useGetProductsQuery } from '../store/services/shopApi';
 import DessertCard from '../components/dessertCard/DessertCard';
 import Header from '../components/header/Header';
 import Loader from '../components/loader/PageLoader';
-import { useGetProductsQuery } from '../store/services/shopApi';
-import styles from '../styles/modules/DessertsPage.module.scss';
 import dessert1 from '../assets/cake-slice.png';
 import dessert2 from '../assets/cake.png';
 import dessert3 from '../assets/cupcake.png';
 import dessert4 from '../assets/pie.png';
 import dessert5 from '../assets/piece-of-cake.png';
 import dessert6 from '../assets/sweets.png';
+import styles from '../styles/modules/DessertsPage.module.scss';
+
 const DessertsListPage = () => {
 	const { data, isLoading } = useGetProductsQuery(2);
 	return (

@@ -1,8 +1,9 @@
 import SushiShopCard from '../components/sushiShopCard/SushiShopCard';
 import MeatShopCard from '../components/meatShopCard/MeatShopCard';
 import DessertShopCard from '../components/dessertShopCard/DessertShopCard';
-import styles from '../styles/modules/ShopPage.module.scss';
 import Header from '../components/header/Header';
+import styles from '../styles/modules/ShopPage.module.scss';
+
 const Shops = () => {
 	return (
 		<>

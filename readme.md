@@ -17,13 +17,7 @@
      yarn dev
      ```
 
-4. Register an account:
-
-   - To begin using the website, you need to register an account.
-   - Click on the profile icon located in the top right corner of the page.
-   - Follow the registration process and provide the necessary information.
-
-5. Access the deployed version:
+4. Access the deployed version:
    - Alternatively, you can visit the deployed version of the website on Vercel.
    - Click on the following link to access the application:
-     https://home-front-pi.vercel.app/login
+     https://e-commerce-zeta-jade.vercel.app/

@@ -1,9 +1,10 @@
-import CartItem from './cartItem/CartItem';
-import styles from '../../styles/modules/Cart.module.scss';
-import CartForm from './cartForm/CartForm';
-import { useCart } from '../../hooks/useCart';
-import CartEmpty from './cartEmpty/CartEmpty';
 import { useSubmitOrderMutation } from '../../store/services/shopApi';
+import { useCart } from '../../hooks/useCart';
+import CartItem from './cartItem/CartItem';
+import CartForm from './cartForm/CartForm';
+import CartEmpty from './cartEmpty/CartEmpty';
+import styles from '../../styles/modules/Cart.module.scss';
+
 const Cart = () => {
 	const { cart } = useCart();
 	const shopId = cart.items.find((item) => item.hasOwnProperty('shop'))?.shop;

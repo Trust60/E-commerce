@@ -1,8 +1,9 @@
+import { useGetProductsQuery } from '../store/services/shopApi';
 import Header from '../components/header/Header';
 import SushiCard from '../components/sushiCard/SushiCard';
-import styles from '../styles/modules/SushiPage.module.scss';
 import Loader from '../components/loader/PageLoader';
-import { useGetProductsQuery } from '../store/services/shopApi';
+import styles from '../styles/modules/SushiPage.module.scss';
+
 const SushiListPage = () => {
 	const { data, isLoading } = useGetProductsQuery(1);
 

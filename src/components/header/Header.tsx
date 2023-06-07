@@ -1,6 +1,7 @@
 import { useCart } from '../../hooks/useCart';
-import styles from './header.module.scss';
 import { Link, useLocation } from 'react-router-dom';
+import styles from './header.module.scss';
+
 const Header = () => {
 	const { cart } = useCart();
 	const cartCounter = cart?.items.map((item) => item.quantity);

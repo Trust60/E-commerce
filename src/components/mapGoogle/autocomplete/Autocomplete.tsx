@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import usePlacesAutocomplete, { getGeocode, getLatLng } from 'use-places-autocomplete';
+import { useField } from 'formik';
 import useOnclickOutside from 'react-cool-onclickoutside';
 import styles from '../../../styles/modules/Cart.module.scss';
-import { useField } from 'formik';
 
 const Autocomplete = ({
 	name,
