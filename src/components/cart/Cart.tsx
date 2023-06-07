@@ -4,6 +4,7 @@ import CartItem from './cartItem/CartItem';
 import CartForm from './cartForm/CartForm';
 import CartEmpty from './cartEmpty/CartEmpty';
 import styles from '../../styles/modules/Cart.module.scss';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 	const { cart } = useCart();
@@ -15,7 +16,14 @@ const Cart = () => {
 			{cart && cart.items.length > 0 ? (
 				<>
 					<div className={styles.container}>
-						<p className={styles.container__order}>Your order</p>
+						<div className={styles.container__title}>
+							<p className={styles.title__order}>Your order</p>
+							<Link to={'/order-history'}>
+								<p className={styles.title__history}>
+									Order history <span aria-hidden="true">&rarr;</span>
+								</p>
+							</Link>
+						</div>
 						<hr />
 						<div className={styles.container__wrapper}>
 							<div className={styles.container__cart}>

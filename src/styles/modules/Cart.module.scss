@@ -6,11 +6,22 @@
 .container {
 	max-width: 1300px;
 	margin: 0 auto;
-	&__order {
-		margin-top: 5px;
-		font-size: 20px;
-		font-weight: 600;
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		.title__order {
+			margin-top: 5px;
+			font-size: 20px;
+			font-weight: 600;
+		}
+		.title__history {
+			color: #ef4744;
+			font-weight: 600;
+		}
 	}
+
 	&__wrapper {
 		display: flex;
 		position: relative;
