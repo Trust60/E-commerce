@@ -16,7 +16,7 @@ const cartSlice = createSlice({
 				if (state.items[0].shop !== action.payload.shop) {
 					// Change this alert to popup message
 					alert(
-						`For adding new items to cart you need go to the № ${state.items[0].shop} shop , to choose this you must clear your items from another shop `,
+						`To add a new product, go to the store № ${state.items[0].shop}. To select this item please clear the shopping cart`,
 					);
 					return;
 				}
