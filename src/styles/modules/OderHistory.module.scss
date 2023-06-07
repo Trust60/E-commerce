@@ -53,6 +53,11 @@
 				}
 			}
 		}
+		.orders__container {
+			display: flex;
+			justify-content: center;
+			gap: 30px;
+		}
 		.history__list__container {
 			display: flex;
 			flex-direction: column;
@@ -61,6 +66,10 @@
 			padding: 20px 10px 20px 10px;
 			margin-bottom: 50px;
 			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			.order {
+				font-weight: 600;
+				margin-bottom: 10px;
+			}
 			.total__quantity {
 				color: #8b8b8b;
 			}

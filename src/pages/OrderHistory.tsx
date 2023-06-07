@@ -34,6 +34,7 @@ const OrderHistory = () => {
 			console.log('Ошибка при выполнении запроса:', error);
 		}
 	};
+	console.log(data);
 	return (
 		<>
 			<Header />
@@ -67,14 +68,15 @@ const OrderHistory = () => {
 							</Form>
 						</Formik>
 					</div>
-
-					{isLoading
-						? 'Loading...'
-						: data?.map((order) => (
-								<div className={styles.history__list__container}>
-									<OrderHistoryList key={order.id} items={order.items} />
-								</div>
-						  ))}
+					<div className={styles.orders__container}>
+						{isLoading
+							? 'Loading...'
+							: data?.map((order) => (
+									<div className={styles.history__list__container}>
+										<OrderHistoryList key={order.id} id={order.id} items={order.items} />
+									</div>
+							  ))}
+					</div>
 				</div>
 			</div>
 		</>

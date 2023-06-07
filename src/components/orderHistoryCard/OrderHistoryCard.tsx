@@ -11,7 +11,7 @@ const OrderHistoryCard = ({ image, title, price, weight, quantity }) => {
 					<p className={styles.info__price}>{price} UAH</p>
 					<p className={styles.info__quantity}>Qty. {quantity}</p>
 				</div>
-				<p className={styles.info__weight}>{weight} g.</p>
+				{weight === undefined ? '' : <p className={styles.info__weight}>{weight} g.</p>}
 			</div>
 		</div>
 	);

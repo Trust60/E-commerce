@@ -1,12 +1,12 @@
 import OrderHistoryCard from '../orderHistoryCard/OrderHistoryCard';
 import styles from '../../styles/modules/OderHistory.module.scss';
 
-const OrderHistoryList = ({ items }) => {
+const OrderHistoryList = ({ items, id }) => {
 	const totalQuantity = items.reduce((sum, tovar) => sum + tovar.quantity, 0);
 	const totalAmount = items.reduce((sum, tovar) => sum + tovar.price * tovar.quantity, 0);
-	console.log(items);
 	return (
 		<>
+			<p className={styles.order}>Order #{id}</p>
 			{items.map((tovar) => (
 				<OrderHistoryCard
 					key={tovar.id}
