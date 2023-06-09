@@ -32,7 +32,8 @@ const OrderHistory = () => {
 
 	const handleSubmit = async (values) => {
 		try {
-			setPhone(values.phone);
+			const encodedPhone = encodeURIComponent(values.phone);
+			setPhone(encodedPhone);
 			setEmail(values.email);
 			console.log('Найденные заказы:', data);
 		} catch (error) {
