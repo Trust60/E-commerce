@@ -20,4 +20,4 @@
 4. Access the deployed version:
    - Alternatively, you can visit the deployed version of the website on Vercel.
    - Click on the following link to access the application:
-     https://e-commerce-zeta-jade.vercel.app/
+     https://e-commerce-8hk5.vercel.app/
